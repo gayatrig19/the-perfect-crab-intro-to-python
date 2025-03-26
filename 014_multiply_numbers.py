@@ -5,9 +5,10 @@
 
 # Notice two parameters with a comma between them
 def multiply_numbers(num_a, num_b):
-  return num_a * num_b # That `*` means multiply
+    return num_a * num_b  # That `*` means multiply
 
 # And let's use it:
+
 
 print("multiply_numbers(2, 3) is:")
 print(multiply_numbers(2, 3))
