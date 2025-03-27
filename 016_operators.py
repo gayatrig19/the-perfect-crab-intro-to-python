@@ -5,7 +5,7 @@
 # further`. I'm going to give you some more terminology.
 
 def add_one(num):
-  return num + 1
+    return num + 1
 
 # You may need to widen the panel or zoom out to see the table:
 
@@ -36,6 +36,7 @@ def add_one(num):
 #
 # I've started it for you.
 
+
 # Addition
 added = 2 + 3
 print(f"2 + 3 = {added} (should be 5)")
@@ -53,38 +54,54 @@ print(f"2 * 3 = {multiplied} (should be 6)")
 
 # == Subtraction ==
 
-# subtracted = 2 ? 3
-# print(f"2 ? 3 = {subtracted} (should be -1)")
+subtracted = 2 - 3
+print(f"2 - 3 = {subtracted} (should be -1)")
 
 # == Division ==
 
-# divided = 2 ? 3
-# print(f"2 ? 3 = {divided} (should be 0.6666666666666666)")
+divided = 2 / 3
+print(f"2 / 3 = {divided} (should be 0.6666666666666666)")
 
 # This kind of 'decimal point' number, 0.6666666666666666 is called a float, by
 # the way, meaning 'floating point'.
 
 # == Modulus == Sometimes known as "remainder if we divide 3 by 2"
 
-# modulus = 3 ? 2
-# print(f"3 ? 2 = {modulus} (should be 1)")
+modulus = 3 % 2
+print(f"3 % 2 = {modulus} (should be 1)")
 
 # == Floor division == Sometimes known as "division without remainder"
 
-# floor_divided = 2 ? 3
-# print(f"2 ? 3 = {floor_divided} (should be 0)")
+floor_divided = 2 // 3
+print(f"2 // 3 = {floor_divided} (should be 0)")
 
 # == Exponentiation == Sometimes known as "2 to the power of 3"
 
-# expr = 2 ? 3
-# print(f"2 ? 3 = {expr} (should be 8)")
+expr = 2 ** 3
+print(f"2 ** 3 = {expr} (should be 8)")
 
 # There are many more operators in Python that you can research. You're very
 # welcome to try out a few below:
 
 # OPERATOR PLAYGROUND STARTS
 
+# == Assignment Operator ==
+assign = 5
+assign += 5
+print(f"{assign} += 5 (should be 10)")
+print(assign := 5)
 
+# == Comparison Operator ==
+
+x = 5
+y = 6
+print(f"{x > y} (should be False)")
+print(f"{x <= y} (should be True)")
+
+# == Bitwise Operator ==
+
+x = 3 << 2
+print(f"{x} = 3 << 2 (should be 12)")
 
 # OPERATOR PLAYGROUND ENDS
 
