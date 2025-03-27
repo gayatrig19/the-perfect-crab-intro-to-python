@@ -6,8 +6,8 @@ added = 2 + 3
 
 # Is this a statement? Yes!
 #
-# That statement uses the `=` operator to assign the result of the expression on
-# the right (`2 + 3`) to the name on the left (`added`).
+# That statement uses the `=` operator to assign the result of the expression
+# on the right (`2 + 3`) to the name on the left (`added`).
 #
 # It's called a statement because it changes the 'state' of the program.
 #

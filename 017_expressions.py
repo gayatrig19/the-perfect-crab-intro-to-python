@@ -27,11 +27,12 @@ added = 2 + 3
 #
 # Or do we multiply 3 * 4 to get 12, then add 2 to get 14?
 #
-# @TASK: You can find out by running `python` in your terminal and typing that code
-# into it. You'll see something like this:
+# @TASK: You can find out by running `python` in your terminal
+# and typing that code into it. You'll see something like this:
 #
 # ```
-# Python 3.10.9 (main, Dec 15 2022, 10:44:50) [Clang 14.0.0 (clang-1400.0.29.202)] on darwin
+# Python 3.10.9 (main, Dec 15 2022, 10:44:50)
+# [Clang 14.0.0 (clang-1400.0.29.202)] on darwin
 # Type "help", "copyright", "credits" or "license" for more information.
 # >>> 2 + 3 * 4
 # 14
@@ -40,7 +41,8 @@ added = 2 + 3
 #
 # You can then type in 'exit()' to leave Python.
 #
-# So we get 14! Python executes the multiplication first, and then the addition.
+# So we get 14! Python executes the multiplication first,
+# and then the addition.
 # We can control this using brackets.
 #
 # @TASK: Try this using `python` in the terminal:
@@ -60,10 +62,12 @@ added = 2 + 3
 
 # I'm going to reintroduce the `add_one` function:
 
+
 def add_one(num):
-  return num + 1
+    return num + 1
 
 # Here are some more expressions:
+
 
 add_one(2)          # Evaluates to 3
 add_one(3)          # Evaluates to 4
@@ -94,6 +98,12 @@ add_one(add_one(add_one(add_one(add_one(add_one(1))))))
 # EXPRESSIONS PLAYGROUND BEGINS
 
 
+def multiply_num(num_a, num_b):
+    return num_a * num_b + 2
+
+
+print(multiply_num(3, 3))   # Evaluates to 11
+print(multiply_num(4, 5) * ((4 / 2) + 3))  # Evaluates to 110
 
 # EXPRESSIONS PLAYGROUND ENDS
 
