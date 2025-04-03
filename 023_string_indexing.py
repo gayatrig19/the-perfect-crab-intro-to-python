@@ -9,7 +9,8 @@ from lib.helpers import check_that_these_are_equal
 # Strings are more complex. They're a basic form of what, in programming, we
 # call a 'data structure'.
 
-# This means they've got more than one thing in them, and they're organised in a
+# This means they've got more than one thing in them,
+# and they're organised in a
 # specific way depending on what type of data structure they are.
 
 # A string has a number of characters inside it in a particular order.
@@ -45,9 +46,12 @@ print(note[0:3])
 print("")
 print("Function: get_first_letter")
 
+
 def get_first_letter(the_str):
-  # Return the first letter of the string
-  pass
+    # Return the first letter of the string
+    return the_str[0]
+    pass
+
 
 check_that_these_are_equal(
   get_first_letter("The king granted them"),
@@ -64,9 +68,12 @@ check_that_these_are_equal(
 print("")
 print("Function: get_last_letter")
 
+
 def get_last_letter(the_str):
-  # Return the last letter of the string
-  pass
+    # Return the last letter of the string
+    return the_str[-1]
+    pass
+
 
 check_that_these_are_equal(
   get_last_letter("The king granted them"),
@@ -83,9 +90,12 @@ check_that_these_are_equal(
 print("")
 print("Function: get_nth_letter")
 
+
 def get_nth_letter(the_str, n):
-  # Return the letter of the string at the specified index
-  pass
+    # Return the letter of the string at the specified index
+    return the_str[n]
+    pass
+
 
 check_that_these_are_equal(
   get_nth_letter("The king granted them", 4),
@@ -102,9 +112,12 @@ check_that_these_are_equal(
 print("")
 print("Function: get_letters_between_four_and_eight")
 
+
 def get_letters_between_four_and_eight(the_str):
-  # Return the section of the string between indexes four and eight
-  pass
+    # Return the section of the string between indexes four and eight
+    return the_str[4:8]
+    pass
+
 
 check_that_these_are_equal(
   get_letters_between_four_and_eight("The king granted them"),

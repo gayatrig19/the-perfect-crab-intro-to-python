@@ -6,7 +6,8 @@ from lib.helpers import check_that_these_are_equal
 
 # == Length ==
 
-# Strings contain characters. We can find the number of characters a string has.
+# Strings contain characters. We can find the number of
+# characters a string has.
 # This is called the length.
 
 # You can get the length using a function pre-loaded into Python called `len`
@@ -40,7 +41,7 @@ old_string = "Hello, YOUR_NAME!"
 new_string = old_string.replace("YOUR_NAME", "Kay")
 
 # Uncomment this next line to see the result:
-# print(new_string)
+print(new_string)
 
 # You'll notice here that the function is coming in a different place. Let's
 # compare `len` and `replace`:
@@ -48,7 +49,11 @@ new_string = old_string.replace("YOUR_NAME", "Kay")
 my_string = "hello"
 
 len(my_string)              # <-- Independent Function
-my_string.replace("h", "w") # <-- Method Function
+string1 = my_string.replace("h", "w")  # <-- Method Function
+
+print(len(my_string))
+print(string1)
+
 
 # Why the difference? It's a little complicated.
 #
@@ -58,7 +63,8 @@ my_string.replace("h", "w") # <-- Method Function
 
 # == Upper and Lowercase ==
 
-# When you're doing the Makers assessment, you're quite likely to be asked to do
+# When you're doing the Makers assessment, you're quite likely
+# to be asked to do
 # something you've not done before. This is very normal.
 
 # In an engineering job, and increasingly in any job, you have to get
@@ -75,9 +81,12 @@ print("Function: uppercase")
 
 # Search for 'python make string uppercase'
 
+
 def make_uppercase(string):
-  # Return the string in uppercase
-  pass
+    # Return the string in uppercase
+    return string.upper()
+    pass
+
 
 check_that_these_are_equal(
   make_uppercase("hello"), "HELLO")
@@ -92,9 +101,12 @@ print("Function: lowercase")
 
 # Search for 'python make string lowercase'
 
+
 def make_lowercase(string):
-  # Return the string in lowercase
-  pass
+    # Return the string in lowercase
+    return string.lower()
+    pass
+
 
 check_that_these_are_equal(
   make_lowercase("HELLO"), "hello")
@@ -109,9 +121,12 @@ print("Function: strip_whitespace")
 
 # Search for 'python remove whitespace from string'
 
+
 def strip_whitespace(string):
-  # Return the string with any whitespace removed from the start and end
-  pass
+    # Return the string with any whitespace removed from the start and end
+    return string.strip()
+    pass
+
 
 check_that_these_are_equal(
   strip_whitespace("hello "), "hello")

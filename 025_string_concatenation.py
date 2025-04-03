@@ -16,15 +16,16 @@ print(my_string)
 
 # my_string = "Forty" + 2
 
-# Python doesn't like us mixing the concatenation of strings and the addition of
-# numbers. To make it do this, we need to explicitly convert the number to a
+# Python doesn't like us mixing the concatenation of strings and the addition
+# of numbers. To make it do this, we need to explicitly convert the number to a
 # string using the `str` function built-in to Python.
 
 my_string = "Forty" + str(2)
 print(my_string)
 
-# There is another way to concatenate strings which is more convenient. They are
-# called f-strings, and are a feature of Python 3 (which is what our IDE uses).
+# There is another way to concatenate strings which is more convenient.
+# They are called f-strings, and are a feature of Python 3
+# (which is what our IDE uses).
 
 # Here's what they look like:
 
@@ -43,17 +44,21 @@ print(f"Your name is {len(my_name)} characters long")
 
 # f-strings are a form of what's called string interpolation.
 
-# @TASK: Run this code using `python 025_string_concatenation.py` to see what it
-# does, and then move onto the exercise below.
+# @TASK: Run this code using `python 025_string_concatenation.py`
+# to see what it does, and then move onto the exercise below.
 
 # == Exercise One ==
 
 print("")
 print("Function: greet")
 
+
 def greet(name):
-  # Return the string "Hello, Kay!" where "Kay" is the name provided
-  pass
+    # Return the string "Hello, Kay!" where "Kay" is the name provided
+    greetings = f"Hello, {name}!"
+    return greetings
+    pass
+
 
 check_that_these_are_equal(
   greet("Chuang-tzu"),
