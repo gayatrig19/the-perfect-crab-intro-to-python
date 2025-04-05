@@ -9,15 +9,16 @@ from lib.helpers import check_that_these_are_equal
 
 leaves_on_the_tree = 0
 
+
 if leaves_on_the_tree == 0:
-  print("It must be winter — or a dead tree")
+    print("It must be winter — or a dead tree")
 
 # Let's break this down:
 
 # The `if` keyword tells Python we want to execute some code conditionally.
 
-# The `leaves_on_the_tree == 0` is the conditional expression. If this evaluates
-# to True, then the block of code afterwards will be run.
+# The `leaves_on_the_tree == 0` is the conditional expression.
+# If this evaluates to True, then the block of code afterwards will be run.
 
 # Within this, the `==` is a comparison operator. It evaluates to True if the
 # values on the left and on the right are equal.
@@ -30,9 +31,9 @@ if leaves_on_the_tree == 0:
 # We can also have an `else` to cover the other case:
 
 if leaves_on_the_tree == 0:
-  print("It must be winter — or a dead tree")
+    print("It must be winter — or a dead tree")
 else:
-  print("This is a happy tree with nice leaves")
+    print("This is a happy tree with nice leaves")
 
 # When Python sees the `else:`, it will execute the next block of code only if
 # the condition evaluated to False.
@@ -46,10 +47,15 @@ else:
 print("")
 print("Function: is_first_of_the_month")
 
+
 def is_first_of_the_month(day_number):
-  # Return "First of the month!" if the day number is 1.
-  # Return "Not first of the month" otherwise.
-  pass
+    # Return "First of the month!" if the day number is 1.
+    # Return "Not first of the month" otherwise.
+    if day_number == 1:
+        return "First of the month!"
+    return "Not first of the month"
+    pass
+
 
 check_that_these_are_equal(
   is_first_of_the_month(1),
@@ -66,11 +72,16 @@ check_that_these_are_equal(
 print("")
 print("Function: has_five_chars")
 
+
 def has_five_chars(the_str):
-  # Return "STRING is five characters long" if the string is five characters
-  # long.
-  # Otherwise, return "Not five characters".
-  pass
+    # Return "STRING is five characters long" if the string is five characters
+    # long.
+    # Otherwise, return "Not five characters".
+    if len(the_str) == 5:
+        return f"{the_str} is five characters long"
+    return "Not five characters"
+    pass
+
 
 check_that_these_are_equal(
   has_five_chars("ABCDE"),

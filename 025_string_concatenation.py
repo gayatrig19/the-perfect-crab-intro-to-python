@@ -55,8 +55,7 @@ print("Function: greet")
 
 def greet(name):
     # Return the string "Hello, Kay!" where "Kay" is the name provided
-    greetings = f"Hello, {name}!"
-    return greetings
+    return f"Hello, {name}!"
     pass
 
 
